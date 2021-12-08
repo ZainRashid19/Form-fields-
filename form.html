@@ -30,7 +30,11 @@
 					document.getElementById('phoneField').value = 'example: 212-123-1234';
 				}
 			}
-
+				function resetEmail() {
+					if (document.getElementById('emailField').value == '') {
+						document.getElementById('emailField').value = '@gmail';
+					}
+				}
 	</script>
 </head>
 
@@ -54,8 +58,8 @@
 					<label for="phoneField">Phone:</label>
 					<input id="phoneField" name="phoneField" type="text" class="textfield" value="example: 212-123-1234" onfocus="clearPhone();" onBlur="resetPhone();">
 
-					<label for="nameField">Email:</label>
-					<input id="emailField" name="emailField" type="text" class="textfield" value="@gmail.com" onfocus="clearemail();" onBlur="resetemailx();">
+					<label for="emailField">Email:</label>
+					<input id="emailField" name="emailField" type="text" class="textfield" value="@gmail.com" onfocus="clearemail();" onBlur="resetemail();">
 
 
 
